@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geiza Bolos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Ícone do WhatsApp -->
+    <a
+      href="https://wa.me/+5588996328842"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="./assets/geiza_bolos.png" alt="Logo Geiza Bolos" />
+        </div>
+        <h1>Geiza Bolos</h1>
+        <div class="carrinho-icon" id="carrinho-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="carrinho-count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Filtro de categorias -->
+      <section class="filtro-categorias">
+        <button class="categoria-btn active" data-categoria="todos">
+          Todos
+        </button>
+        <button class="categoria-btn" data-categoria="bolos">Bolos</button>
+        <button class="categoria-btn" data-categoria="mini-bolos">
+          Mini Bolos
+        </button>
+        <button class="categoria-btn" data-categoria="docinhos">
+          Docinhos
+        </button>
+        <button class="categoria-btn" data-categoria="cupcakes">
+          Cupcakes
+        </button>
+      </section>
+
+      <!-- Lista de produtos -->
+      <section class="produtos">
+        <!-- Produto 1: Bolo de Chocolate -->
+        <div
+          class="produto"
+          data-categoria="bolos"
+          data-nome="Bolo de Chocolate"
+          data-preco="50.00"
+        >
+          <img src="./assets/bolo_chocolate.jpg" alt="Bolo de Chocolate" />
+          <h2>Bolo de Chocolate</h2>
+          <span class="descricao-produto">Delicioso bolo de chocolate com cobertura cremosa.</span>
+          <p>R$ 50,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Fim do Produto 1 -->
+
+        <!-- Produto 2: Mini Bolo 10x10 -->
+        <div
+          class="produto"
+          data-categoria="mini-bolos"
+          data-nome="Mini Bolo 10x10"
+          data-preco="45.00"
+        >
+          <img src="./assets/minibolo10x10.png" alt="Mini Bolo 10x10" />
+          <h2>Mini Bolo 10x10</h2>
+          <span class="descricao-produto">Serve no máximo 4 pessoas.</span>
+          <p>R$ 45,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Fim do Produto 2 -->
+
+        <!-- Produto 3: Cupcake de Morango -->
+        <div
+          class="produto"
+          data-categoria="cupcakes"
+          data-nome="Cupcake de Morango"
+          data-preco="10.00"
+        >
+          <img src="./assets/cupcake_morango.jpg" alt="Cupcake de Morango" />
+          <h2>Cupcake de Morango</h2>
+          <span class="descricao-produto">Cupcake recheado com creme de morango.</span>
+          <p>R$ 10,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Fim do Produto 3 -->
+
+        <!-- Produto 4: Docinho de Beijinho -->
+        <div
+          class="produto"
+          data-categoria="docinhos"
+          data-nome="Docinho de Beijinho"
+          data-preco="2.00"
+        >
+          <img src="./assets/beijinho.jpg" alt="Docinho de Beijinho" />
+          <h2>Docinho de Beijinho</h2>
+          <span class="descricao-produto">Tradicional doce de leite ninho com coco.</span>
+          <p>R$ 2,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Fim do Produto 4 -->
+      </section>
+
+      <!-- Carrinho de compras -->
+      <section class="carrinho" id="carrinho">
+        <button id="fechar-carrinho" class="fechar-carrinho">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho"></ul>
+        <p>Total: R$ <span id="total">0.00</span></p>
+        <button id="limpar-carrinho">Limpar Carrinho</button>
+        <button id="finalizar-compra">Finalizar Compra</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Geiza Bolos</p>
+      <p class="desenvolvedor">
+        Desenvolvido por <a href="#" target="_blank">Eduardo Pontes</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
