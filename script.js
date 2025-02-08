@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'https://api-geiza-bolos.vercel.app/'; // Substitua pelo endereço correto da sua API
+    const API_URL = 'https://api-geiza-bolos.vercel.app/produtos'; // Substitua pelo endereço correto da sua API
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     const listaCarrinho = document.getElementById('lista-carrinho');
     const totalElement = document.getElementById('total');
