@@ -9,7 +9,7 @@ body {
   header {
     background-color: #ff66b3;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     position: relative;
   }
@@ -23,7 +23,7 @@ body {
   }
   
   .logo img {
-    max-width: 100px;
+    max-width: 120px;
     height: auto;
   }
   
@@ -220,7 +220,7 @@ body {
     background-color: #ff66b3;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     position: fixed;
     width: 100%;
     bottom: 0;

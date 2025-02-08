@@ -35,83 +35,16 @@
 
     <main>
       <!-- Filtro de categorias -->
-      <section class="filtro-categorias">
+      <section class="filtro-categorias" id="filtro-categorias">
         <button class="categoria-btn active" data-categoria="todos">
           Todos
         </button>
-        <button class="categoria-btn" data-categoria="bolos">Bolos</button>
-        <button class="categoria-btn" data-categoria="mini-bolos">
-          Mini Bolos
-        </button>
-        <button class="categoria-btn" data-categoria="docinhos">
-          Docinhos
-        </button>
-        <button class="categoria-btn" data-categoria="cupcakes">
-          Cupcakes
-        </button>
+        <!-- As categorias serão carregadas dinamicamente aqui -->
       </section>
 
       <!-- Lista de produtos -->
-      <section class="produtos">
-        <!-- Produto 1: Bolo de Chocolate -->
-        <div
-          class="produto"
-          data-categoria="bolos"
-          data-nome="Bolo de Chocolate"
-          data-preco="50.00"
-        >
-          <img src="./assets/bolo_chocolate.jpg" alt="Bolo de Chocolate" />
-          <h2>Bolo de Chocolate</h2>
-          <span class="descricao-produto">Delicioso bolo de chocolate com cobertura cremosa.</span>
-          <p>R$ 50,00</p>
-          <button class="adicionar">Adicionar ao Carrinho</button>
-        </div>
-        <!-- Fim do Produto 1 -->
-
-        <!-- Produto 2: Mini Bolo 10x10 -->
-        <div
-          class="produto"
-          data-categoria="mini-bolos"
-          data-nome="Mini Bolo 10x10"
-          data-preco="45.00"
-        >
-          <img src="./assets/minibolo10x10.png" alt="Mini Bolo 10x10" />
-          <h2>Mini Bolo 10x10</h2>
-          <span class="descricao-produto">Serve no máximo 4 pessoas.</span>
-          <p>R$ 45,00</p>
-          <button class="adicionar">Adicionar ao Carrinho</button>
-        </div>
-        <!-- Fim do Produto 2 -->
-
-        <!-- Produto 3: Cupcake de Morango -->
-        <div
-          class="produto"
-          data-categoria="cupcakes"
-          data-nome="Cupcake de Morango"
-          data-preco="10.00"
-        >
-          <img src="./assets/cupcake_morango.jpg" alt="Cupcake de Morango" />
-          <h2>Cupcake de Morango</h2>
-          <span class="descricao-produto">Cupcake recheado com creme de morango.</span>
-          <p>R$ 10,00</p>
-          <button class="adicionar">Adicionar ao Carrinho</button>
-        </div>
-        <!-- Fim do Produto 3 -->
-
-        <!-- Produto 4: Docinho de Beijinho -->
-        <div
-          class="produto"
-          data-categoria="docinhos"
-          data-nome="Docinho de Beijinho"
-          data-preco="2.00"
-        >
-          <img src="./assets/beijinho.jpg" alt="Docinho de Beijinho" />
-          <h2>Docinho de Beijinho</h2>
-          <span class="descricao-produto">Tradicional doce de leite ninho com coco.</span>
-          <p>R$ 2,00</p>
-          <button class="adicionar">Adicionar ao Carrinho</button>
-        </div>
-        <!-- Fim do Produto 4 -->
+      <section class="produtos" id="produtos">
+        <!-- Os produtos serão carregados dinamicamente aqui -->
       </section>
 
       <!-- Carrinho de compras -->
