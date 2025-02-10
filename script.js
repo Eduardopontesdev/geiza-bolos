@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     finalizarCompraBtn.addEventListener('click', () => {
         const total = parseFloat(totalElement.textContent);
         const mensagem = `Olá, gostaria de fazer um pedido:\n${carrinho.map(item => `${item.nome} - R$ ${item.preco.toFixed(2)}`).join('\n')}\nTotal: R$ ${total.toFixed(2)}`;
-        const url = `https://wa.me/+5588996328842?text=${encodeURIComponent(mensagem)}`;
+        const url = `https://wa.me/+5588994851435?text=${encodeURIComponent(mensagem)}`;
         window.open(url, '_blank');
     });
 
